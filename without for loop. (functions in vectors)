@@ -1,0 +1,24 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+//different functions in vectors
+int main() {
+    //size function
+    vector <int> vec;
+    cout << "size: " << vec.size() << endl;
+   
+    // push_back function 
+    vec.push_back(55);
+    vec.push_back(45);
+    vec.push_back(35);
+    cout << "after push_back: " << vec.size() << endl;
+  
+    // pop_back
+    vec.pop_back();         //no value needed, auto pop last element
+    cout << "after pop_back: " << vec.size() << endl;
+    
+  cout << vec.front() << endl;
+  cout << vec.back() << endl;
+  cout << vec.at(0) << endl;
+    
+}
